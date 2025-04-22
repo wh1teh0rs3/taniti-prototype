@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - The Island of Taniti</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .contact-container {
+      max-width:600px;
+      margin:2rem auto;
+      padding:1.5rem;
+      background:#fff;
+      border-radius:8px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      text-align:center;
+      font-family:'Segoe UI',sans-serif;
+    }
+    .contact-container h2 {
+      font-family:'Playfair Display',serif;
+      color:#2c3e50;
+      font-size:1.8rem;
+      margin-bottom:1rem;
+    }
+    .contact-container p,
+    .contact-container ul li {
+      color:#333;
+      font-size:1rem;
+      margin-bottom:.75rem;
+    }
+    .contact-container ul {
+      list-style:none;
+      padding:0;
+      margin:1rem 0;
+    }
+    .contact-container ul li a {
+      color:#2c3e50;
+      font-weight:bold;
+      text-decoration:none;
+      transition:color .3s;
+    }
+    .contact-container ul li a:hover {
+      color:#0078d7;
+      text-decoration:underline;
+    }
+    .contact-form {
+      display:flex;
+      flex-direction:column;
+      gap:.75rem;
+      margin-top:1rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding:.5rem;
+      border:1px solid #ccc;
+      border-radius:4px;
+      font-family:inherit;
+    }
+    .contact-form button {
+      padding:.75rem;
+      border:none;
+      border-radius:4px;
+      background:#2c3e50;
+      color:#fff;
+      cursor:pointer;
+      transition:background .3s;
+    }
+    .contact-form button:hover {
+      background:#1f2f38;
+    }
+  </style>  
+  
+</head>
+<body>
+  <div class="top-bar">
+    <div class="logo">The Island of Taniti</div>
+  </div>
+  <nav class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="todo.html"> Things to Do</a>
+    <a href="plan.html">Plan Your Trip</a>
+    <a href="hotels.html">Hotels</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <main class="content contact-page">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>Have questions or feedback? Send us an email or give us a call.</p>
+      <ul>
+        <li>Email: <a href="mailto:info@taniti.com">info@taniti.com</a></li>
+        <li>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+      </ul>
+      <form action="mailto:info@taniti.com" method="post" enctype="text/plain" class="contact-form" style="margin: 0 auto; max-width: 600px; text-align: left;">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required style="width:100%; padding:0.75rem; margin:0.5rem 0;" /><br />
+        <label for="email">Your Email:</label><br />
+        <input type="email" id="email" name="email" required style="width:100%; padding:0.75rem; margin:0.5rem 0;" /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="8" required style="width:100%; padding:0.75rem; margin:0.5rem 0;"></textarea><br />
+        <button type="submit" style="padding:0.75rem 1.5rem; font-size:1rem; display: block; margin: 1rem auto;">Send Message</button>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025 The Island of Taniti. All rights reserved.</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

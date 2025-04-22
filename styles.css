@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+  }
+  .top-bar {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    text-align: center;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .nav-bar {
+    background-color: #34495e;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;        
+    transition: all 0.3s ease;
+  }
+  .nav-bar a:hover {
+    text-decoration: underline;
+  }
+  
+  .slideshow-wrapper {
+    width: 95%;
+    max-width: 1400px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+  
+  .slide {
+    display: none;
+    position: absolute;
+    inset: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slide.active {
+    display: block;
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    backdrop-filter: blur(2px);
+    z-index: 2;
+  }
+  
+  .dots-container {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+  
+  .dot {
+    height: 14px;
+    width: 14px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #e4f500;
+  }
+  
+  .content {
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  
+  .filters {
+    width: 250px;
+    position: sticky;
+    top: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    height: fit-content;
+  }
+  .filter-group {
+    margin-bottom: 1rem;
+  }
+  .filter-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+  }
+  .filter-group select,
+  button[type="submit"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .hotel-listings {
+    flex: 1;
+  }
+  
+  .hotel-card {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  .hotel-card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 6px;
+  }
+  .hotel-card h3 {
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    color: #2c3e50;
+  }
+  .hotel-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  .rating {
+    margin: 0.5rem 0;
+    color: #e67e22;
+    font-weight: bold;
+  }
+  
+  .footer, footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 800px) {
+    .slide { height: auto; }
+    .category, .restaurant, .slide { height: auto; }
+  }
+  

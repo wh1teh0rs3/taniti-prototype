@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Island of Taniti</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.top-bar {
+  background-color: #2c3e50;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.nav-bar {
+  background-color: #34495e;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.filters {
+  width: 250px;
+  position: sticky;
+  top: 1rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  height: fit-content;
+}
+
+.filter-group {
+  margin-bottom: 1rem;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.filter-group select,
+button[type="submit"] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.hotel-listings {
+  flex: 1;
+}
+
+.hotel-card {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.hotel-card img {
+  width: 100%;
+  height: auto;         
+  max-height: 300px;    
+  object-fit: contain;  
+  border-radius: 6px;
+}
+
+.hotel-card h3 {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.hotel-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.rating {
+  margin: 0.5rem 0;
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="logo">The Island of Taniti</div>
+  </div>
+
+  <nav class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="todo.html"> Things to Do</a>
+    <a href="plan.html">Plan Your Trip</a>
+    <a href="hotels.html">Hotels</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <main class="content">
+    <aside class="filters">
+      <h2>Filter Hotels</h2>
+      <form id="filterForm">
+        <div class="filter-group">
+          <label for="rating">Rating:</label>
+          <select id="rating">
+            <option value="">Any</option>
+            <option value="1">1 star</option>
+            <option value="2">2 stars</option>
+            <option value="3">3 stars</option>
+            <option value="4">4 stars</option>
+            <option value="5">5 stars</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="budget">Budget:</label>
+          <select id="budget">
+            <option value="">Any</option>
+            <option value="budget">Budget</option>
+            <option value="midrange">Mid-range</option>
+            <option value="luxury">Luxury</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="rooms">Rooms:</label>
+          <select id="rooms">
+            <option value="">Any</option>
+            <option value="1bed">1 Bed</option>
+            <option value="2bed">2 Beds</option>
+            <option value="suite">Family Suite</option>
+          </select>
+        </div>
+
+        <button type="submit">Apply Filters</button>
+      </form>
+    </aside>
+
+    <section class="hotel-listings" id="hotelList">
+      <h2>Places to Stay</h2>
+
+      <article class="hotel-card" data-rating="4" data-budget="luxury" data-rooms="2bed">
+        <img src="hotelpimages/hotel 11.jpg" alt="Azure Bay Resort">
+        <h3>Azure Bay Resort</h3>
+        <div class="rating">★★★★☆ (4/5)</div>
+        <p>A luxurious four-star escape with panoramic ocean views, fine dining, a full-service spa, and beachside cabanas. Ideal for honeymooners and travelers seeking upscale comfort and seclusion.</p>
+      </article>
+
+      <article class="hotel-card" data-rating="3" data-budget="midrange" data-rooms="1bed">
+        <img src="hotelpimages/hotel1.jpg" alt="Coconut Grove Inn">
+        <h3>Coconut Grove Inn</h3>
+        <div class="rating">★★★☆☆ (3/5)</div>
+        <p>A charming, family-owned boutique hotel near downtown Taniti. Enjoy lush gardens, a peaceful courtyard, and daily homemade breakfast. A favorite for couples and retirees.</p>
+      </article>
+
+      <article class="hotel-card" data-rating="2" data-budget="budget" data-rooms="suite">
+        <img src="hotelpimages/hotel3.jpg" alt="Mango Tree Hostel">
+        <h3>Mango Tree Hostel</h3>
+        <div class="rating">★★☆☆☆ (2/5)</div>
+        <p>Perfect for backpackers and budget travelers, this lively hostel offers clean dorms, private rooms, communal kitchens, and organized island tours. Great spot to meet fellow explorers.</p>
+      </article>
+
+      <article class="hotel-card" data-rating="3" data-budget="midrange" data-rooms="2bed">
+        <img src="hotelpimages/hotel5.jpg" alt="Seaside Breeze Hotel">
+        <h3>Seaside Breeze Hotel</h3>
+        <div class="rating">★★★☆☆ (3/5)</div>
+        <p>A mid-range hotel with ocean-facing balconies, an outdoor pool, and modern rooms. Centrally located for easy access to beaches, shops, and nightlife. Great for families or group travelers.</p>
+      </article>
+
+      <article class="hotel-card" data-rating="4" data-budget="midrange" data-rooms="suite">
+        <img src="hotelpimages/hotel4.jpg" alt="Volcano View Lodge">
+        <h3>Volcano View Lodge</h3>
+        <div class="rating">★★★★☆ (4/5)</div>
+        <p>Nestled in the hills near Taniti’s active volcano, this rustic lodge is a favorite among nature lovers. Offers guided hikes, stargazing decks, and breathtaking mountain views.</p>
+      </article>
+
+      <article class="hotel-card" data-rating="3" data-budget="budget" data-rooms="1bed">
+        <img src="hotelpimages/hotel6.jpg" alt="Sunset Palms Bed & Breakfast">
+        <h3>Sunset Palms Bed & Breakfast</h3>
+        <div class="rating">★★★☆☆ (3/5)</div>
+        <p>A cozy B&B run by locals, offering a warm, homey atmosphere with only 6 uniquely decorated rooms. Guests enjoy organic breakfasts and personalized travel tips from hosts.</p>
+      </article>
+
+      <article class="hotel-card" data-rating="5" data-budget="luxury" data-rooms="suite">
+        <img src="hotelpimages/hotel7.jpg" alt="Bamboo Shores Villas">
+        <h3>Bamboo Shores Villas</h3>
+        <div class="rating">★★★★★ (5/5)</div>
+        <p>Private beachfront villas with modern amenities, full kitchens, and private plunge pools. Designed for long stays, remote workers, or travelers wanting extra space and privacy.</p>
+      </article>
+
+      <article class="hotel-card" data-rating="3" data-budget="budget" data-rooms="2bed">
+        <img src="hotelpimages/hotel8.jpg" alt="Coral Reef Stay">
+        <h3>Coral Reef Stay</h3>
+        <div class="rating">★★★☆☆ (3/5)</div>
+        <p>Affordable comfort near Taniti’s best snorkeling beaches. Rooms are simple but clean, and perfect for families or couples looking to explore the island on a budget.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 The Island of Taniti. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('filterForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const selectedRating = document.getElementById('rating').value;
+      const selectedBudget = document.getElementById('budget').value;
+      const selectedRooms = document.getElementById('rooms').value;
+
+      document.querySelectorAll('.hotel-card').forEach(card => {
+        const rating = card.getAttribute('data-rating');
+        const budget = card.getAttribute('data-budget');
+        const rooms = card.getAttribute('data-rooms');
+
+        const ratingMatch = !selectedRating || selectedRating === rating;
+        const budgetMatch = !selectedBudget || selectedBudget === budget;
+        const roomsMatch = !selectedRooms || selectedRooms === rooms;
+
+        if (ratingMatch && budgetMatch && roomsMatch) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
