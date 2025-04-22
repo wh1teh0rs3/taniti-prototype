@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Island of Taniti</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.top-bar {
+  background-color: #2c3e50;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.nav-bar {
+  background-color: #34495e;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.filters {
+  width: 250px;
+  position: sticky;
+  top: 1rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  height: fit-content;
+}
+
+.filter-group {
+  margin-bottom: 1rem;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.filter-group select,
+button[type="submit"] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.hotel-listings {
+  flex: 1;
+}
+
+.hotel-card {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.hotel-card img {
+  width: 100%;
+  height: auto;         
+  max-height: 300px;    
+  object-fit: contain;  
+  border-radius: 6px;
+}
+
+.hotel-card h3 {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.hotel-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.rating {
+  margin: 0.5rem 0;
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="logo">The Island of Taniti</div>
+  </div>
+
+  <nav class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="todo.html"> Things to Do</a>
+    <a href="plan.html">Plan For Your Trip</a>
+    <a href="hotels.html">Hotels</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <main class="content">
+    <body>
+        <h1>References</h1>
+        <ul>
+          <li><a href="https://businessviewoceania.com/cairns-plaza-hotel/">Cairns Plaza Hotel: Preferred destination for leisure and business travellers. (2017, February 11). <i>Business View Oceania</i></a></li>
+      
+          <li><a href="https://www.tcpalm.com/story/entertainment/dining/2018/10/24/escape-tropical-island-setting-tipsy-parrot-stuart/1613077002/">Dennis, S. (2018, October 24). Escape to a tropical island setting at the Tipsy Parrot in Stuart. <i>Treasure Coast</i></a></li>
+      
+          <li><a href="https://www.insplosion.com/blog/posts/tropical-bar-restaurant-inspirations/">Editor. (2019, April 3). Tropical bar and restaurant inspirations. <i>Insplosion</i></a></li>
+      
+          <li><a href="https://www.tripadvisor.com/Hotel_Review-g297482-d23971801-Reviews-Grand_Sirenis_San_Andres-San_Andres_Island_San_Andres_and_Providencia_Department.html">Grand Sirenis San Andrés - Updated 2025 prices & hotel reviews (San Andres Island, Colombia). (n.d.-a). <i>Tripadvisor</i></a></li>
+      
+          <li><a href="https://www.holidify.com/pages/nightlife-in-phi-phi-islands-5978.html">Holidify. (2023, June 13). Nightlife in Phi Phi Island – A guide to the best nights in Phi Phi. <i>Holidify</i></a></li>
+      
+          <li><a href="https://www.ameliaisland.com/blog/top-10-amelia-island-restaurants-with-scenic-water-views/">Jenkins, E. (2024, June 19). Top 10 Amelia Island restaurants with scenic water views. <i>Amelia Island</i></a></li>
+      
+          <li><a href="https://www.istockphoto.com/photo/modern-hotel-gm172977455-6857030">Konakli modern hotel in Turkey. (n.d.). <i>iStock</i></a></li>
+      
+          <li><a href="https://www.onlinebeachbar.com/ten-caribbean-beaches-to-walk">Online Beach Bar. (n.d.). 10 Caribbean beaches to walk along, uninterrupted bright white sand and vibrant turquoise sea. <i>The Online Beach Bar</i></a></li>
+      
+          <li><a href="https://www.booking.com/hotel/mf/palm-court-orient-bay-french-st-martin.html">Orient Bay Palm Court Residence 4 stars, Orient Bay (updated prices 2025). (n.d.-b). <i>Booking.com</i></a></li>
+      
+          <li><a href="https://www.mustdo.com/fl/naples-bonita-springs-marco-island-everglades/tours/pure-florida-sightseeing-cruises/">Pure Florida sightseeing & sunset cruises | Must Do Visitor Guides. (2016, December 8). <i>Must Do Visitor Guides</i></a></li>
+      
+          <li><a href="https://www.tcpalm.com/picture-gallery/nletter/2023/09/06/restaurant-review-island-pig-fish-in-fort-pierce/70780066007/">Regensdorf, L. (2023, September 7). Restaurant review: Island Pig & Fish in Fort Pierce. <i>Treasure Coast</i></a></li>
+      
+          <li><a href="https://www.gohawaii.com/experiences/sightseeing">Sightseeing. (2017, February 14). <i>Go Hawaii</i></a></li>
+      
+          <li><a href="https://dynamic-media.tacdn.com/media/photo-o/2f/24/67/42/caption.jpg?w=1100&h=800&s=1">Tacdn Media. (2025). Hotel exterior photo. <i>Tripadvisor</i></a></li>
+      
+          <li><a href="https://www.istockphoto.com/photo/smiling-man-age-43-gm962007056-263351699">Valeriy_g. (n.d.-c). Smiling man, age 43 [Photograph]. <i>iStock</i></a></li>
+      
+          <li><a href="https://www.tripadvisor.com/Hotel_Review-g303633-d4511991-Reviews-Velinn_Pousada_Ubatuba_Tropical-Ubatuba_State_of_Sao_Paulo.html">Velinn Pousada Ubatuba Tropical - Brazil. (n.d.-b). <i>Tripadvisor</i></a></li>
+      
+          <li><a href="https://en.wikipedia.org/wiki/File:Island_Hotel,_Cedar_Key,_Florida_(2).jpg">Wikipedia. (n.d.). Island Hotel, Cedar Key, Florida (2) [Photograph]. <i>Wikipedia, the free encyclopedia</i></a></li>
+      
+          <li><a href="https://www.istockphoto.com/photo/resort-swimming-pool-gm119926339-15353142">A resort swimming pool at twilight. (n.d.-a). <i>iStock</i></a></li>
+        </ul>
+      </body>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 The Island of Taniti. All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>
