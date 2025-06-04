@@ -1,18 +1,20 @@
 # taniti-prototype
 
-Usability Task 
-- Find the lowest-rated hotel on the island.
-Objective: The user needs to locate the lowest-rated hotel 
+This is a basic HTML and CSS prototype for a fictional vacation destination: **Taniti Island**. The website is designed to showcase attractions, accommodations, and general tourism information for potential visitors.
 
-- Find the highest-rated hotel on the island.
-Objective: The user should be able to find the highest-rated hotel.
+## Features
 
--  Where can you find information about the currency used on the island?
-Objective: This asks users to locate specific information (currency).
+- Responsive layout with modern design
+- Home, Activities, and Contact pages (or whichever sections you included)
+- Styled using CSS with visual focus on tropical and vacation aesthetics
 
--	If a visitor wanted seafood, which restaurant would they go to?
-Objective: user is tasked finding a seafood restaurant.
+## Technologies Used
 
--	Find information about transportation options to and on the island.
-Objective: the user needs to locate transportation details.
+- HTML5
+- CSS3
+
+## How to Use
+
+1. Clone or download this repository.
+2. Open `index.html` in any modern web browser to view the site.
 
